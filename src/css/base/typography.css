@@ -49,6 +49,12 @@
   font-style: normal;
 }
 
+
+
+body{
+  font-size: 16px;
+}
+
 h1,
 h2 {
   font-family: 'PaytoneOne';
@@ -62,4 +68,8 @@ h3 {
 p {
   font-family: 'SegoeUI';
   font-weight: 400;
+}
+
+a{
+  font-family: 'PaytoneOne';
 }

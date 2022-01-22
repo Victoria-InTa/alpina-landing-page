@@ -1,0 +1,23 @@
+.layout{
+    display: grid;
+    grid-template-columns:  1fr;
+    grid-template-areas: 
+        "header"
+        "main "
+        "footer";
+}
+
+.header{
+    grid-area: header;
+}
+
+.main-content{
+    grid-area: main-content;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+
+
