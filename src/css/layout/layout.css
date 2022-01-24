@@ -1,23 +1,24 @@
-.layout{
-    display: grid;
-    grid-template-columns:  1fr;
-    grid-template-areas: 
-        "header"
-        "main "
-        "footer";
+.layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    'header'
+    'main '
+    'footer';
 }
 
-.header{
-    grid-area: header;
+.header {
+  grid-area: header;
 }
 
-.main-content{
-    grid-area: main-content;
+.main-content {
+  background: url(../../assets/images/main-background.jpg) no-repeat center;
+  background-size: cover;
+  grid-area: main;
+  display: flex;
+  justify-content: center;
 }
 
-.footer{
-    grid-area: footer;
+.footer {
+  grid-area: footer;
 }
-
-
-

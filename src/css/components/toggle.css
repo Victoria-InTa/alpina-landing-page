@@ -1,42 +1,43 @@
-.toggle{
-    position: relative;
-    width: 2.5rem;
-    height: 2rem;
-    z-index: 1;
+.toggle {
+  position: relative;
+  width: 2.5rem;
+  height: 2rem;
+  z-index: 1;
+  margin-left: auto;
 }
 
-.toggle__line{
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 6px;
-    background-color: white;
-    transition: all 0.25s ease-in-out;
+.toggle__line {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background-color: white;
+  transition: all 0.25s ease-in-out;
 }
 
-.toggle__line:nth-child(1){
-    top: 0;
+.toggle__line:nth-child(1) {
+  top: 0;
 }
 
-.toggle__line:nth-child(2){
-    top: 50%;
-    transform: translateY(-50%);
+.toggle__line:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.toggle__line:nth-child(3){
-    bottom: 0;
+.toggle__line:nth-child(3) {
+  bottom: 0;
 }
 
-.toggle.open .toggle__line:nth-child(1){
-    transform: rotate(40deg);
-    top: 40%;
+.toggle.open .toggle__line:nth-child(1) {
+  transform: rotate(40deg);
+  top: 40%;
 }
 
-.toggle.open .toggle__line:nth-child(2){
-    opacity:0;
+.toggle.open .toggle__line:nth-child(2) {
+  opacity: 0;
 }
 
-.toggle.open .toggle__line:nth-child(3){
-    transform: rotate(-40deg);
-    bottom: 40%;
+.toggle.open .toggle__line:nth-child(3) {
+  transform: rotate(-40deg);
+  bottom: 40%;
 }
