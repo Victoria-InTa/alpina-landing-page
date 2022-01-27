@@ -1,0 +1,13 @@
+.button {
+  border-radius: 40px;
+}
+
+.button--red {
+  padding: 0.6rem 1.5rem;
+  background-color: transparent;
+  color: white;
+  border: 1px solid red;
+}
+
+.button--brown {
+}

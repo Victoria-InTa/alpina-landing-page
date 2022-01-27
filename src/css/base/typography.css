@@ -49,27 +49,33 @@
   font-style: normal;
 }
 
-
-
-body{
+body {
   font-size: 16px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 3rem;
 }
 
 h1,
 h2 {
   font-family: 'PaytoneOne';
   font-weight: 400;
+  text-align: center;
 }
 
 h3 {
   font-family: 'SegoeUI';
+  text-align: center;
 }
 
-p {
+:is(p, button, input) {
   font-family: 'SegoeUI';
   font-weight: 400;
+  text-align: center;
 }
 
-a{
+a {
   font-family: 'PaytoneOne';
 }
