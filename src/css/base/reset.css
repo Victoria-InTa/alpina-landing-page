@@ -1,5 +1,7 @@
 :root {
   --purple: rgb(178, 235, 170);
+  --brown:  linear-gradient(180deg, #864A23 0%, #6A3A1B 100%);
+  --white:  rgb(255, 255, 255);
 }
 
 * {
@@ -16,5 +18,5 @@ img {
 
 figure {
   margin: 0;
-  display: grid;
+  display: flex;
 }

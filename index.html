@@ -7,8 +7,10 @@
     <title>Alpina</title>
   </head>
   <body class="layout">
+
+    <!--Header-->
     <header class="header">
-      <a href=""
+      <a class="logo" href=""
         ><svg width="143" height="59" viewBox="0 0 143 59" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M0 29.5C0 13.2076 13.2076 0 29.5 0H137.51C139.377 0 140.226 2.33066 138.796 3.53134L116.999 21.8433C112.242 25.8395 112.242 33.1605 116.999 37.1567L138.796 55.4687C140.226 56.6693 139.377 59 137.51 59H29.5C13.2076 59 0 45.7924 0 29.5Z"
@@ -21,12 +23,14 @@
         </svg>
       </a>
 
+ <!--toggle-->
       <div class="toggle">
         <div class="toggle__line"></div>
         <div class="toggle__line"></div>
         <div class="toggle__line"></div>
       </div>
 
+ <!--menu-->
       <div class="menu">
         <nav class="menu__navbar">
           <ul class="menu__list">
@@ -38,8 +42,13 @@
         </nav>
       </div>
     </header>
+
+     <!--main-->
     <main class="main-content">
+       <!--section-father-->
       <section class="section-father">
+
+         <!--Hero-->
         <section class="hero-section section">
           <article class="hero-section__column">
             <h1 class="hero-section__title">ALPINE</h1>
@@ -58,6 +67,7 @@
 
         <hr class="hr" />
 
+       <!--Section-list-->
         <section class="section-list section">
           <ul class="section-ul">
             <li class="section-li"><img class="li-img" src="./src/assets/icons/facebookLogo.svg" alt="" /></li>
@@ -69,106 +79,36 @@
           </ul>
         </section>
 
+ <!--section-imagenes-->
         <section class="section-img section">
-          <figure class="img"><img class="div-img" src="./src/assets/images/image1.jpg" alt="" /></figure>
-          <figure class="img"><img class="div-img" src="./src/assets/images/image3.jpg" alt="" /></figure>
-          <figure class="img"><img class="div-img" src="./src/assets/images/image2.jpg" alt="" /></figure>
+          <figure><img class="figure-img" src="./src/assets/images/image1.jpg" alt="" /></figure>
+          <figure><img class="figure-img" src="./src/assets/images/image3.jpg" alt="" /></figure>
+          <figure><img class="figure-img" src="./src/assets/images/image2.jpg" alt="" /></figure>
         </section>
-        <section class="section-marketing">
-          <h2 class="section-h2">MARKETING</h2>
-          <hr class="hr2" />
-          <a class="vector" href="">💬</a>
-          <button class="section-vector-btn">Start a thread</button>
-        </section>
+        
+         <!--Section-marketing-->
+         <section class="section--marketing section">
+            <h2 class="section--h2">MARKETING</h2>
+          <figure class="figure--line"><img class="img--line" src="./src/assets/icons/line.svg" alt=""></figure>
+            <span class="span--button">💬</span>
+            <button class="button--brown">Start a thread</button>
+         </section>
 
-        <section class="notificacion">
-          <div class="section-notificaciones-div">
-            <div class="eclipse"><p class="n1">1</p></div>
-            <p class="n2">Unread Notifications</p>
-          </div>
-        </section>
+         <!--Notificaciones-->
+         
+            <div class="Notifications">
+              <section class="section-unread">
+                <div class="cont-circle-1"><span class="circle-1">1</span><p class="unread-p">Unread Notifications</p></div>
+              </section>
+              <section class="section-dismiss">
+                <div class="cont-circle"><div class="circle-long"><div class="circle-short"></div></div><p  class="circle-p">Dismiss all</p></div>
+              </section>
+            </div>
+             
+            
 
-        <section class="Dismiss">
-          <div class="cont-eclipse">
-            <div class="circulo-mayor"><div class="circulo-menor"></div></div>
-            <p class="circulo-p">Dismiss all</p>
-          </div>
-        </section>
-
-        <section class="section-notifi-father">
-          <article class="section-art1">
-            <div class="color">
-              <div class="div1">
-                <div class="imagenes">
-                  <div class="img1">
-                    <img class="img-1" src="./src/assets/images/rosario.png" alt="" />
-                  </div>
-                  <div class="img2">
-                    <img class="img-2" src="./src/assets/icons/rosarioIcon.svg" alt="" />
-                  </div>
-                </div>
-                <div class="text2">
-                  <h4 class="text2-h4">Rosario</h4>
-                  <p class="text2-p">Just now</p>
-                </div>
-              </div>
-              <div class="div2">
-                <div class="text3">
-                  <h3 class="text3-h3">Showcasing Customers</h3>
-                  <p class="text3-p">Our customers have continued to send in pictures of their finished artwork..</p>
-                </div>
-              </div>
-            </div>
-            <div class="text4">
-              <h3 class="text4-h3">Start a thread</h3>
-              <p class="text4-p">
-                Technology trends have the potential to drive significant disruption and deliver significant
-                opportunity. Digital trends such as autonomous things, blockchain, digital twins and smart spaces are
-                rapidly approaching maturity.
-              </p>
-            </div>
-          </article>
-
-          <article class="section-art2">
-            <div class="recent-eclipse">
-              <p class="Recent">Recent</p>
-              <div class="cont-eclipse1"><h5 class="unread">Unread</h5></div>
-            </div>
-
-            <div class="color">
-              <div class="div1">
-                <div class="imagenes">
-                  <div class="img1">
-                    <img class="img-1" src="./src/assets/images/dan.png" alt="" />
-                  </div>
-                  <div class="img2">
-                    <img class="img-2" src="./src/assets/icons/danIcon.svg" alt="" />
-                  </div>
-                </div>
-                <div class="text2">
-                  <h4 class="text2-h4">Dan</h4>
-                  <p class="text2-p">2 hrs ago</p>
-                </div>
-              </div>
-              <div class="div2">
-                <div class="text3">
-                  <h3 class="text3-h3">Thoughts on attendin...</h3>
-                  <p class="text3-p">
-                    Thoughts on attendin... Our customers have continued to send in pictures of their finished
-                    artwork...
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="text4">
-              <h3 class="text4-h3">Mark the decision</h3>
-              <p class="text4-p">
-                This continuous technology innovation will enable the alignment of the physical and digital worlds and
-                create competitive advantage for some. Are you ready?
-              </p>
-            </div>
-          </article>
-        </section>
+          
+          
       </section>
     </main>
     <footer class="footer"></footer>
