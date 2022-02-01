@@ -1,3 +1,8 @@
+.main-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .section {
   padding: 5rem 5vw;
 }
@@ -306,3 +311,37 @@
 }
 
 
+/*comentarios*/
+
+.section-content__figure{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.figure-content__img{
+  width: 10rem;
+  padding: 2rem 2rem;
+}
+.section-content__profiles{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.div-content-img-text__profile{
+  padding-top: 1rem;
+  width: 16rem;
+  margin: 1rem;
+}
+.content-img__icons{
+  width: 10.5rem;
+}
+.img__icon{
+  padding-left: 1rem;
+}
+.container-text{
+  padding-top: 1rem;
+}
+.text{
+  font-weight: 600;
+  text-align: start;
+}
