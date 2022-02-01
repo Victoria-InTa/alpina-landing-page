@@ -7,7 +7,6 @@
     <title>Alpina</title>
   </head>
   <body class="layout">
-
     <!--Header-->
     <header class="header">
       <a class="logo" href=""
@@ -23,14 +22,14 @@
         </svg>
       </a>
 
- <!--toggle-->
+      <!--toggle-->
       <div class="toggle">
         <div class="toggle__line"></div>
         <div class="toggle__line"></div>
         <div class="toggle__line"></div>
       </div>
 
- <!--menu-->
+      <!--menu-->
       <div class="menu">
         <nav class="menu__navbar">
           <ul class="menu__list">
@@ -43,12 +42,11 @@
       </div>
     </header>
 
-     <!--main-->
+    <!--main-->
     <main class="main-content">
-       <!--section-father-->
+      <!--section-father-->
       <section class="section-father">
-
-         <!--Hero-->
+        <!--Hero-->
         <section class="hero-section section">
           <article class="hero-section__column">
             <h1 class="hero-section__title">ALPINE</h1>
@@ -67,7 +65,7 @@
 
         <hr class="hr" />
 
-       <!--Section-list-->
+        <!--Section-list-->
         <section class="section-list section">
           <ul class="section-ul">
             <li class="section-li"><img class="li-img" src="./src/assets/icons/facebookLogo.svg" alt="" /></li>
@@ -79,37 +77,136 @@
           </ul>
         </section>
 
- <!--section-imagenes-->
+        <!--section-imagenes-->
         <section class="section-img section">
-          <figure><img class="figure-img" src="./src/assets/images/image1.jpg" alt="" /></figure>
-          <figure><img class="figure-img" src="./src/assets/images/image3.jpg" alt="" /></figure>
-          <figure><img class="figure-img" src="./src/assets/images/image2.jpg" alt="" /></figure>
+          <figure class="image1"><img class="figure-img" src="./src/assets/images/image1.jpg" alt="" /></figure>
+          <figure class="image2"><img class="figure-img" src="./src/assets/images/image3.jpg" alt="" /></figure>
+          <figure class="image3"><img class="figure-img" src="./src/assets/images/image2.jpg" alt="" /></figure>
         </section>
-        
-         <!--Section-marketing-->
-         <section class="section--marketing section">
-            <h2 class="section--h2">MARKETING</h2>
-          <figure class="figure--line"><img class="img--line" src="./src/assets/icons/line.svg" alt=""></figure>
-            <span class="span--button">💬</span>
-            <button class="button--brown">Start a thread</button>
-         </section>
 
-         <!--Notificaciones-->
-         
-            <div class="Notifications">
-              <section class="section-unread">
-                <div class="cont-circle-1"><span class="circle-1">1</span><p class="unread-p">Unread Notifications</p></div>
-              </section>
-              <section class="section-dismiss">
-                <div class="cont-circle"><div class="circle-long"><div class="circle-short"></div></div><p  class="circle-p">Dismiss all</p></div>
-              </section>
+        <!--Section-marketing-->
+        <section class="section--marketing section">
+          <h2 class="section--h2">MARKETING</h2>
+          <figure class="figure--line"><img class="img--line" src="./src/assets/icons/line.svg" alt="" /></figure>
+          <span class="span--button">💬</span>
+          <button class="button--brown">Start a thread</button>
+        </section>
+
+        <!--Notificaciones-->
+
+        <section class="notifications">
+          <div class="notification-card">
+            <header class="notification-card__header">
+              <div class="notification-column notification-column--transparent">
+                <div class="container-circle">
+                  <span class="container-circle__1 container-circle__1--red">1</span>
+                  <p class="container-circle__text">Unread Notifications</p>
+                </div>
+              </div>
+              <div class="notification-column notification-column--white">
+                <div class="container-circle">
+                  <div class="container-circle__long"><div class="container-circle__short"></div></div>
+                  <p class="container-circle__text">Dismiss all</p>
+                </div>
+              </div>
+            </header>
+            <div class="notification-card__main">
+              <div class="profile">
+                <figure class="profile-container">
+                  <img class="profile-container__image" src="./src/assets/images/rosario.png" alt="rosario " />
+                  <img class="profile-container__icon" src="./src/assets/icons/rosarioIcon.svg" alt="state" />
+                </figure>
+                <div class="profile-container-state">
+                  <h3>Rosario</h3>
+                  <p>just now</p>
+                </div>
+              </div>
+              <div class="notification-card__content">
+                <h3>Showcasing Customers</h3>
+                <p>Our customers have continued to send in pictures of their finished artwork...</p>
+              </div>
             </div>
-             
-            
+          </div>
 
-          
-          
+          <div class="notification-text">
+            <h4>Start a thread</h4>
+            <p>
+              Technology trends have the potential to drive significant disruption and deliver significant opportunity.
+              Digital trends such as autonomous things, blockchain, digital twins and smart spaces are rapidly
+              approaching maturity.
+            </p>
+          </div>
+
+          <div class="notification-card">
+            <header class="notification-card__header">
+              <div class="notification-column notification-column--transparent">
+                <p class="notification-column__text">Unread Notifications</p>
+              </div>
+              <div class="notification-column notification-column--white">
+                <div class="container-circle container-circle--black">
+                  <div class="container-circle__long"><div class="contianer-circle__short"></div></div>
+                  <p class="container-circle__text">Unread</p>
+                </div>
+              </div>
+            </header>
+            <div class="notification-card__main">
+              <div class="profile">
+                <figure class="profile-container">
+                  <img class="profile-container__image" src="./src/assets/images/dan.png" alt="rosario " />
+                  <img class="profile-container__icon" src="./src/assets/icons/danIcon.svg" alt="state" />
+                </figure>
+                <div class="profile-container-state">
+                  <h3>Dan</h3>
+                  <p>2 hrs ago</p>
+                </div>
+              </div>
+              <div class="notification-card__content">
+                <h3>Thoughts on attendin...</h3>
+                <p>Our customers have continued to send in pictures of their finished artwork...</p>
+              </div>
+            </div>
+          </div>
+          <div class="notification-text">
+            <h4>Mark the decision</h4>
+            <p>
+              This continuous technology innovation will enable the alignment of the physical and digital worlds and
+              create competitive advantage for some. Are you ready?
+            </p>
+          </div>
+        </section>
       </section>
+
+      <section>
+        <div>
+          <figure><img src="./src/assets/icons/Glossier.svg" alt=""></figure>
+          <figure><img src="./src/assets/icons/Aspire.svg" alt=""></figure>
+          <figure><img src="./src/assets/icons/Nylas.svg" alt=""></figure>
+          <figure><img src="./src/assets/icons/bitwise.svg" alt=""></figure>
+        </div>
+        <article>
+          <div>
+           <div>
+             <div>
+              <div>
+                <img src="" alt="">
+              </div>
+              <div>
+                <figure><img src="./src/assets/icons/symmetric.svg" alt=""></figure>
+              </div>
+             </div>
+           </div>
+          </div>
+          <div>
+
+          </div>
+          <div>
+
+          </div>
+        </article>
+      </section>
+
+
+
     </main>
     <footer class="footer"></footer>
     <script type="module" src="./src/js/main.js"></script>

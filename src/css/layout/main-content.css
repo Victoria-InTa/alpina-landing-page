@@ -3,6 +3,7 @@
 }
 
 .section-father {
+  max-width: 1200px;
   border: 1px solid grey;
   margin-left: 1rem;
   margin-right: 1rem;
@@ -38,6 +39,7 @@
 .hero-section__subtitle {
   color: white;
   margin-bottom: 1rem;
+  text-align: center;
 }
 .hero-section__text {
   color: rgba(255, 255, 255, 0.603);
@@ -82,34 +84,62 @@
 /*imagenes*/
 
 .section-img {
-  display: flex;
+  display: grid;
   gap: 1rem;
-  flex-wrap: wrap;
-  justify-content: center;
 }
+
+@media (min-width: 768px) {
+  .section-img {
+    gap: 0;
+    grid-template-columns: auto 18px auto 18px auto;
+    grid-template-rows: 71px 180px auto;
+  }
+
+  .image1 {
+    grid-column: 1/3;
+    grid-row: 2/4;
+  }
+
+  .image2 {
+    z-index: 1;
+    grid-column: 2/5;
+    grid-row: 1/3;
+  }
+
+  .image3 {
+    grid-column: 4/6;
+    grid-row: 2/4;
+  }
+}
+
 .figure-img {
   border: 1px solid white;
   width: 100%;
+  box-shadow: -10px 15px 10px rgba(0, 0, 0, 0.25);
+  min-height: 237px;
 }
 
 /*marketing*/
 
-.section--marketing{
+.section--marketing {
   display: flex;
   flex-wrap: wrap;
-  gap: .5rem;
+  gap: 0.5rem;
   justify-content: center;
 }
-.section--h2{
-  margin-top: .5rem;
+
+.section--h2 {
+  margin-top: 0.5rem;
   color: var(--white);
 }
-.figure--line{
+
+.figure--line {
   width: 300px;
   height: 2rem;
-  padding-top: .5rem;
+  padding-top: 0.5rem;
 }
-.span--button{
+
+.span--button {
   font-size: 2rem;
   width: 50px;
   display: flex;
@@ -118,74 +148,161 @@
   padding: 0 3rem;
 }
 
-
 /*notificaciones*/
-.Notifications{
+
+.notifications {
+  padding: 5rem 5vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .notifications {
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 90px 74px;
+  }
+}
+
+/*.notification-card {
+}*/
+
+.notification-card__header {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 1rem;
-  padding-bottom: 2rem;
 }
-/*.section-unread{
-  
-}*/
-.cont-circle-1{
+
+@media (min-width: 768px) {
+  .notification-card__header {
+    flex-wrap: nowrap;
+  }
+}
+
+.container-circle {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.circle-1{
+.container-circle__1 {
   width: 30px;
   height: 30px;
-  background-color: rgb(255, 0, 0);
+}
+
+.container-circle__1--red {
   border-radius: 50%;
   color: white;
- display: flex;
- align-items: center;
- justify-content: center;
- font-size: 1.2rem;
-}
-.unread-p{
-  font-size: .9rem;
-  color: white;
-  padding-left: 1rem;
-}
-
-
-.section-dismiss{
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 1.2rem;
+  background-color: rgb(255, 0, 0);
 }
-.cont-circle{
+
+.container-circle__text {
+  font-size: 0.9rem;
+  color: white;
+}
+
+.notification-column--white {
+  background-color: #c4c4c4;
   border-radius: 50px;
   display: flex;
   align-items: center;
-  background-color:  #C4C4C4;
-  padding-left: .5rem;
+  color: black;
+  padding: 5px 8px;
 }
- 
-.circle-long{
+
+.container-circle {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  gap: 1rem;
+}
+
+.container-circle__long {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
   border: 2px solid black;
 }
-.circle-short{
-  width: 10px;
-  height: 10px;
+
+.container-circle__short {
+  width: 7.5px;
+  height: 7.5px;
   border-radius: 50%;
   border: 2px solid black;
 }
-.circle-p{
-  padding-left: 1rem;
-  font-size: 1rem;
-  padding-right: 1rem;
+
+.container-circle--black {
+  color: black;
+}
+
+.notification-card__main {
+  margin-top: 25px;
+  background: url(../../assets/images/main-background.jpg) no-repeat center;
+  background-size: cover;
+  padding: 1.2rem;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+
+
+@media (min-width: 768px) {
+  .notification-card__main {
+    grid-template-columns: 0.8fr 1.2fr;
+  }
+}
+
+.profile {
+  display: flex;
+  justify-content: start;
+  gap: 1rem;
+}
+
+.profile-container {
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+
+.profile-container__image {
+  width: 100%;
+}
+
+.profile-container__icon {
+  position: absolute;
+  top: 36px;
+  left: 36px;
+  max-width: 24px;
+  max-height: 24px;
+}
+
+.notification-card__content h3 {
+  text-align: start;
+}
+
+.notification-card__content p {
+  margin-top: 11px;
+  text-align: start;
+}
+
+.notification-text {
+  margin-top: 30px;
+}
+
+.notification-text p {
+  margin-top: 1rem;
+  text-align: start;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 
