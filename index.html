@@ -7,8 +7,9 @@
     <title>Alpina</title>
   </head>
   <body class="layout">
+    <!--Header-->
     <header class="header">
-      <a href=""
+      <a class="logo" href=""
         ><svg width="143" height="59" viewBox="0 0 143 59" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M0 29.5C0 13.2076 13.2076 0 29.5 0H137.51C139.377 0 140.226 2.33066 138.796 3.53134L116.999 21.8433C112.242 25.8395 112.242 33.1605 116.999 37.1567L138.796 55.4687C140.226 56.6693 139.377 59 137.51 59H29.5C13.2076 59 0 45.7924 0 29.5Z"
@@ -21,12 +22,14 @@
         </svg>
       </a>
 
+      <!--toggle-->
       <div class="toggle">
         <div class="toggle__line"></div>
         <div class="toggle__line"></div>
         <div class="toggle__line"></div>
       </div>
 
+      <!--menu-->
       <div class="menu">
         <nav class="menu__navbar">
           <ul class="menu__list">
@@ -35,31 +38,35 @@
             <li class="menu__item"><a class="menu__link" href="">Mobile</a></li>
             <li class="menu__item"><a class="menu__link" href="">Blog</a></li>
           </ul>
-        </nav> 
+        </nav>
       </div>
     </header>
-    <main class="main-content">
 
+    <!--main-->
+    <main class="main-content">
+      <!--section-father-->
       <section class="section-father">
-        <section class="section-content-art-form">
-          <article class="section-art">
-            <h1 class="section-h1">ALPINE</h1>
-            <h3 class="section-h3">SOCIAL MEDIA MARKETING PLATFORM</h3>
-            <p class="section-p">
+        <!--Hero-->
+        <section class="hero-section section">
+          <article class="hero-section__column">
+            <h1 class="hero-section__title">ALPINE</h1>
+            <h3 class="hero-section__subtitle">SOCIAL MEDIA MARKETING PLATFORM</h3>
+            <p class="hero-section__text">
               The core systems of record for marketing that provide a common way of orchestring the experiences across
               channels and applications, including operational managment and measurement, with the ultimate goal of
               driving customer engagement.
             </p>
           </article>
-          <form class="section-form">
-            <input class="section-input" type="email" value="Enter your work email !" />
-            <button class="section-btn">Request acces</button>
+          <form class="form">
+            <input class="form__input" type="email" placeholder="Enter your work email !" />
+            <button class="form__button button button--red">Request acces</button>
           </form>
         </section>
 
         <hr class="hr" />
 
-        <section class="section-list">
+        <!--Section-list-->
+        <section class="section-list section">
           <ul class="section-ul">
             <li class="section-li"><img class="li-img" src="./src/assets/icons/facebookLogo.svg" alt="" /></li>
             <li class="section-li"><img class="li-img" src="./src/assets/icons/twiterLogo.svg" alt="" /></li>
@@ -70,35 +77,163 @@
           </ul>
         </section>
 
-        <section class="section-img">
-          <div class="img"><img class="div-img" src="./src/assets/images/image1.jpg" alt="" /></div>
-          <div class="img"><img class="div-img" src="./src/assets/images/image3.jpg" alt="" /></div>
-          <div class="img"><img class="div-img" src="./src/assets/images/image2.jpg" alt="" /></div>
-        </section>
-        <section class="section-marketing">
-          <h2 class="section-h2">MARKETING</h2>
-          <hr class="hr2">
-            <a class="vector" href="">💬</a>
-            <button class="section-vector-btn">Start a thread</button>
+        <!--section-imagenes-->
+        <section class="section-img section">
+          <figure class="image1"><img class="figure-img" src="./src/assets/images/image1.jpg" alt="" /></figure>
+          <figure class="image2"><img class="figure-img" src="./src/assets/images/image3.jpg" alt="" /></figure>
+          <figure class="image3"><img class="figure-img" src="./src/assets/images/image2.jpg" alt="" /></figure>
         </section>
 
-        <section class="notificacion">
-          <div class="section-notificaciones-div"><div class="eclipse"><p class="n1">1</p></div><p
-          class="n2">Unread Notifications</p></div>
+        <!--Section-marketing-->
+        <section class="section--marketing section">
+          <h2 class="section--h2">MARKETING</h2>
+          <figure class="figure--line"><img class="img--line" src="./src/assets/icons/line.svg" alt="" /></figure>
+          <span class="span--button">💬</span>
+          <button class="button--brown">Start a thread</button>
         </section>
 
+        <!--Notificaciones-->
 
-        <section class="Dismiss">
-          <div class="cont-eclipse">
-            <div class="circulo-mayor"><div class="circulo-menor"></div></div>
-            <p class="circulo-p">Dismiss all</p>
+        <section class="notifications">
+          <div class="notification-card">
+            <header class="notification-card__header">
+              <div class="notification-column notification-column--transparent">
+                <div class="container-circle">
+                  <span class="container-circle__1 container-circle__1--red">1</span>
+                  <p class="container-circle__text">Unread Notifications</p>
+                </div>
+              </div>
+              <div class="notification-column notification-column--white">
+                <div class="container-circle">
+                  <div class="container-circle__long"><div class="container-circle__short"></div></div>
+                  <p class="container-circle__text">Dismiss all</p>
+                </div>
+              </div>
+            </header>
+            <div class="notification-card__main">
+              <div class="profile">
+                <figure class="profile-container">
+                  <img class="profile-container__image" src="./src/assets/images/rosario.png" alt="rosario " />
+                  <img class="profile-container__icon" src="./src/assets/icons/rosarioIcon.svg" alt="state" />
+                </figure>
+                <div class="profile-container-state">
+                  <h3>Rosario</h3>
+                  <p>just now</p>
+                </div>
+              </div>
+              <div class="notification-card__content">
+                <h3>Showcasing Customers</h3>
+                <p>Our customers have continued to send in pictures of their finished artwork...</p>
+              </div>
+            </div>
           </div>
 
-        </section>
+          <div class="notification-text">
+            <h4>Start a thread</h4>
+            <p>
+              Technology trends have the potential to drive significant disruption and deliver significant opportunity.
+              Digital trends such as autonomous things, blockchain, digital twins and smart spaces are rapidly
+              approaching maturity.
+            </p>
+          </div>
 
+          <div class="notification-card">
+            <header class="notification-card__header">
+              <div class="notification-column notification-column--transparent">
+                <p class="notification-column__text">Unread Notifications</p>
+              </div>
+              <div class="notification-column notification-column--white">
+                <div class="container-circle container-circle--black">
+                  <div class="container-circle__long"><div class="contianer-circle__short"></div></div>
+                  <p class="container-circle__text">Unread</p>
+                </div>
+              </div>
+            </header>
+            <div class="notification-card__main">
+              <div class="profile">
+                <figure class="profile-container">
+                  <img class="profile-container__image" src="./src/assets/images/dan.png" alt="rosario " />
+                  <img class="profile-container__icon" src="./src/assets/icons/danIcon.svg" alt="state" />
+                </figure>
+                <div class="profile-container-state">
+                  <h3>Dan</h3>
+                  <p>2 hrs ago</p>
+                </div>
+              </div>
+              <div class="notification-card__content">
+                <h3>Thoughts on attendin...</h3>
+                <p>Our customers have continued to send in pictures of their finished artwork...</p>
+              </div>
+            </div>
+          </div>
+          <div class="notification-text">
+            <h4>Mark the decision</h4>
+            <p>
+              This continuous technology innovation will enable the alignment of the physical and digital worlds and
+              create competitive advantage for some. Are you ready?
+            </p>
+          </div>
+        </section>
+      </section>
+
+
+        <!--Comentarios-->
+      <section class="section section-content-figure__img">
+        <div class="section-content__figure">
+          <figure class="figure-content__img"><img src="./src/assets/icons/Glossier.svg" alt=""></figure>
+          <figure class="figure-content__img"><img src="./src/assets/icons/Aspire.svg" alt=""></figure>
+          <figure class="figure-content__img"><img src="./src/assets/icons/Nylas.svg" alt=""></figure>
+          <figure class="figure-content__img"><img src="./src/assets/icons/bitwise.svg" alt=""></figure>
+        </div>
+
+        <article class="section-content__profiles ">
+          <div class="div-content-img-text__profile profile1">
+            <figure class="content-img__icons">
+              <img src="./src/assets/images/profile1.png" alt="">
+              <img class="img__icon" src="./src/assets/icons/symmetric.svg" alt=""> 
+            </figure>
+            <div class="container-text">
+              <p class="text">The AMA’s definitions of marketing and marketing research are reviewed and reapproved/modified every three-years by a panel of five scholars who are active researchers.</p>
+            </div>
+          </div>
+         
+
+          <div class="div-content-img-text__profile profile2">
+            <figure class="content-img__icons">
+              <img src="./src/assets/images/profile2.png" alt="">
+              <img class="img__icon" src="./src/assets/icons/digitalMarketing.svg" alt=""> 
+            </figure>
+            <div class="container-text">
+              <p class="text">Marketing is the activity, set of institutions, and processes for creating, communicating, delivering, and exchanging offerings that have value for customers, clients, partners, and society at large. </p>
+            </div>
+          </div>
+
+          <div class="div-content-img-text__profile profile3">
+            <figure class="content-img__icons">
+              <img src="./src/assets/images/profile3.png" alt="">
+              <img class="img__icon" src="./src/assets/icons/envie.svg" alt=""> 
+            </figure>
+            <div class="container-text">
+              <p class="text">A brand is a name, term, design, symbol or any other feature that identifies one seller’s good or service as distinct from those of other sellers.</p>
+            </div>
+          </div>
+      
+        </article>
       </section>
     </main>
-    <footer class="footer"></footer>
+
+    <footer class="footer">
+  <!--circulo del footer-->
+     <div class="circle-content__fondo">
+        <div class="circle__red"></div>
+     </div>
+      
+
+       <!--Alpine-footer-->
+       
+
+
+    </footer>
     <script type="module" src="./src/js/main.js"></script>
   </body>
 </html>

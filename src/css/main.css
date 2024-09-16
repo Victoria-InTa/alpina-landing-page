@@ -5,8 +5,9 @@
 @import './components/navbar.css';
 @import './components/toggle.css';
 @import './components/menu.css';
+@import './components/button.css';
 
 @import './layout/footer.css';
 @import './layout/header.css';
 @import './layout/layout.css';
-@import './layout/main-content.css'
+@import './layout/main-content.css';

@@ -1,13 +1,22 @@
-
-
-
-
-
-
-ul{
-    list-style: none;
-    padding: 0;
+:root {
+  --purple: rgb(178, 235, 170);
+  --brown: linear-gradient(180deg, #864a23 0%, #6a3a1b 100%);
+  --white: rgb(255, 255, 255);
 }
-img{
-    width: 100%;
+
+* {
+  margin: 0;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+figure {
+  margin: 0;
+  display: flex;
 }

@@ -49,27 +49,53 @@
   font-style: normal;
 }
 
-
-
-body{
+body {
   font-size: 16px;
+  line-height: 149.8%;
+}
+
+h1 {
+  margin: 0;
+  font-size: 3rem;
 }
 
 h1,
 h2 {
   font-family: 'PaytoneOne';
   font-weight: 400;
+  text-align: center;
 }
 
 h3 {
   font-family: 'SegoeUI';
+  text-align: start;
+  font-size: 22px;
 }
 
-p {
+h4 {
+  font-family: 'SegoeUI';
+  font-weight: 600;
+  text-align: center;
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media (min-width: 768px) {
+  h4 {
+    text-align: start;
+  }
+}
+
+:is(p, button, input) {
   font-family: 'SegoeUI';
   font-weight: 400;
+  text-align: center;
 }
 
-a{
+a {
   font-family: 'PaytoneOne';
+}
+
+.text-black {
+  text-align: start;
 }

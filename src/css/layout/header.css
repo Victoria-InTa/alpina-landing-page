@@ -1,7 +1,11 @@
 .header {
-  background: url(../../assets/images/header-background.jpg) no-repeat center fixed;
+  background: url(../../assets/images/header-background.jpg) no-repeat center;
   background-size: cover;
-  height: 50rem;
+  height: 70rem;
   padding: 2rem 5vw;
   display: flex;
+}
+.logo{
+  height: 80px;
+  margin: 0;
 }
